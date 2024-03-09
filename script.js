@@ -144,7 +144,7 @@ var keyUnique = document.getElementById('keyUnique');
 key.forEach(function(key) {
     key.classList.add('font-semibold');
     key.classList.add('text-xl');
-    key.classList.add('bg-white');
+    key.classList.add('bg-gray-100');
     key.classList.add('py-2');
     key.classList.add('px-3');
     key.classList.add('rounded-md');
@@ -155,7 +155,7 @@ var keyMains = document.querySelectorAll('.keyMain');
 keyMains.forEach(function(keyMain) {
     keyMain.classList.add('font-semibold');
     keyMain.classList.add('text-xl');
-    keyMain.classList.add('bg-red');
+    keyMain.classList.add('bg-red-600');
     keyMain.classList.add('text-white');
     keyMain.classList.add('py-2');
     keyMain.classList.add('px-3');
