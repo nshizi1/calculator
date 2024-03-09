@@ -54,33 +54,33 @@
             <div>
                 <input class="" type="text" readonly id="output" value="">
             </div>
-            <div class="flex flex-col items-center justify-center gap-3">
-                <div class="w-full grid grid-cols-4 rounded-lg gap-3">
-                    <button class="font-semibold text-xl bg-red text-white py-2 px-3 rounded-md" onclick="clearAll()">AC</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('*')">x</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('/')">/</button>
-                    <button class="font-semibold text-xl bg-red text-white py-2 px-3 rounded-md" onclick="clearEntry()"><i class="fa-solid fa-delete-left"></i></button>
+            <div id="keys" class="">
+                <div id="row" class="">
+                    <button class="keyMain" onclick="clearAll()">AC</button>
+                    <button class="key" onclick="appendChar('*')">x</button>
+                    <button class="key" onclick="appendChar('/')">/</button>
+                    <button class="keyMain" onclick="clearEntry()"><i class="fa-solid fa-delete-left"></i></button>
                 </div>
-                <div class="w-full grid grid-cols-4 rounded-lg gap-3">
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('7')">7</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('8')">8</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('9')">9</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('-')"><i class="fa-solid fa-minus"></i></button>
+                <div id="row1" class="">
+                    <button class="key" onclick="appendChar('7')">7</button>
+                    <button class="key" onclick="appendChar('8')">8</button>
+                    <button class="key" onclick="appendChar('9')">9</button>
+                    <button class="key" onclick="appendChar('-')"><i class="fa-solid fa-minus"></i></button>
                 </div>
-                <div class="w-full grid grid-cols-4 rounded-lg gap-3">
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('4')">4</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('5')">5</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('6')">6</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('+')"><i class="fa-solid fa-plus"></i></button>
+                <div id="row2" class="">
+                    <button class="key" onclick="appendChar('4')">4</button>
+                    <button class="key" onclick="appendChar('5')">5</button>
+                    <button class="key" onclick="appendChar('6')">6</button>
+                    <button class="key" onclick="appendChar('+')"><i class="fa-solid fa-plus"></i></button>
                 </div>
-                <div class="w-full grid grid-cols-4 rounded-lg gap-3">
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('1')">1</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('2')">2</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('3')">3</button>
-                    <button class="font-semibold text-xl bg-green text-white py-2 px-3 rounded-md row-span-2" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('%')">%</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('0')">0</button>
-                    <button class="font-semibold text-xl bg-white py-2 px-3 rounded-md" onclick="appendChar('.')">.</button>
+                <div id="row3" class="">
+                    <button class="key" onclick="appendChar('1')">1</button>
+                    <button class="key" onclick="appendChar('2')">2</button>
+                    <button class="key" onclick="appendChar('3')">3</button>
+                    <button id="keyUnique" class="" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+                    <button class="key" onclick="appendChar('%')">%</button>
+                    <button class="key" onclick="appendChar('0')">0</button>
+                    <button class="key" onclick="appendChar('.')">.</button>
                 </div>
             </div>
         </div>

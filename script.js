@@ -33,6 +33,11 @@ function calculate() {
 body = document.getElementById('body');
 head = document.getElementById('head');
 container = document.getElementById('container');
+keys = document.getElementById('keys');
+row = document.getElementById('row');
+row1 = document.getElementById('row1');
+row2 = document.getElementById('row2');
+row3 = document.getElementById('row3');
 if(body){
     // console.log("Id body is available");
     body.classList.add('bg-sky-100');
@@ -84,4 +89,88 @@ if(output){
     output.classList.add('text-2xl')
 }else{
     console.log("no sir");
+}
+
+if(keys){
+    keys.classList.add('flex')
+    keys.classList.add('flex-col')
+    keys.classList.add('items-center')
+    keys.classList.add('justify-center')
+    keys.classList.add('gap-3')
+}else{
+    console.log("keys not available");
+}
+
+if(row){
+    row.classList.add('w-full')
+    row.classList.add('grid')
+    row.classList.add('grid-cols-4')
+    row.classList.add('rounded-lg')
+    row.classList.add('gap-3')
+}else{
+    console.log("row not available");
+}
+if(row1){
+    row1.classList.add('w-full')
+    row1.classList.add('grid')
+    row1.classList.add('grid-cols-4')
+    row1.classList.add('rounded-lg')
+    row1.classList.add('gap-3')
+}else{
+    console.log("row not available");
+}
+if(row2){
+    row2.classList.add('w-full')
+    row2.classList.add('grid')
+    row2.classList.add('grid-cols-4')
+    row2.classList.add('rounded-lg')
+    row2.classList.add('gap-3')
+}else{
+    console.log("row not available");
+}
+if(row3){
+    row3.classList.add('w-full')
+    row3.classList.add('grid')
+    row3.classList.add('grid-cols-4')
+    row3.classList.add('rounded-lg')
+    row3.classList.add('gap-3')
+}else{
+    console.log("row not available");
+}
+
+var key = document.querySelectorAll('.key');
+var keyUnique = document.getElementById('keyUnique');
+// add another class on .key
+key.forEach(function(key) {
+    key.classList.add('font-semibold');
+    key.classList.add('text-xl');
+    key.classList.add('bg-white');
+    key.classList.add('py-2');
+    key.classList.add('px-3');
+    key.classList.add('rounded-md');
+});
+
+var keyMains = document.querySelectorAll('.keyMain');
+
+keyMains.forEach(function(keyMain) {
+    keyMain.classList.add('font-semibold');
+    keyMain.classList.add('text-xl');
+    keyMain.classList.add('bg-red');
+    keyMain.classList.add('text-white');
+    keyMain.classList.add('py-2');
+    keyMain.classList.add('px-3');
+    keyMain.classList.add('rounded-md');
+})
+
+if(keyUnique){
+    keyUnique.classList.add('font-semibold');
+    keyUnique.classList.add('text-xl');
+    keyUnique.classList.add('bg-green-600');
+    keyUnique.classList.add('text-white');
+    keyUnique.classList.add('row-span-2');
+    keyUnique.classList.add('py-2');
+    keyUnique.classList.add('px-3');
+    keyUnique.classList.add('rounded-md');
+}else{
+    console.log("keyUnique not available");
 }
