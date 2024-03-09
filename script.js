@@ -55,3 +55,33 @@ if(head){
 }else{
     console.log("head not available");
 }
+
+if(container){
+    container.classList.add('containerDiv')
+    container.classList.add('px-4')
+    container.classList.add('py-10')
+    container.classList.add('bg-blue-500')
+    container.classList.add('white')
+    container.classList.add('rounded-2xl')
+    container.classList.add('text-gray-900')
+    container.classList.add('flex')
+    container.classList.add('flex-col')
+    container.classList.add('gap-6')
+}else{
+    console.log("container not available");
+}
+if(output){
+    // console.log("Yes sir");
+    output.classList.add('text-green-600')
+    output.classList.add('outline-none')
+    output.classList.add('px-4')
+    output.classList.add('py-3')
+    output.classList.add('shadow-inner')
+    output.classList.add('shadow-gray-200')
+    output.classList.add('rounded-lg')
+    output.classList.add('w-full')
+    output.classList.add('font-bold')
+    output.classList.add('text-2xl')
+}else{
+    console.log("no sir");
+}
